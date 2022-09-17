@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Hello WOrld!</h1>
+    <form action = "{% url 'result' %}">
+        {% csrf_token %}
+        <label>Age: </label>
+        <input type = "text" name = "Age"><br><br>
+        <label>Hypertension: </label>
+        <input type = "text" name = "Hypertension"><br><br>
+        <label>Heart Disease: </label>
+        <input type = "text" name = "Heart Disease"><br><br>
+        <label>Work Type: </label>
+        <input type = "text" name = "Work Type"><br><br>
+        <label>Average Glucose Level: </label>
+        <input type = "text" name = "Average Glucose Level"><br><br>
+        <label>BMI: </label>
+        <input type = "text" name = "BMI"><br><br>
+        <label>Smoking Status: </label>
+        <input type = "text" name = "Smoking Status"><br><br>
+        <label>Gender: </label>
+        <input type = "text" name = "Gender"><br><br>
+        <label>Ever Married: </label>
+        <input type = "text" name = "Ever Married"><br><br>
+        <label>Residence Type: </label>
+        <input type = "text" name = "Residence Type"><br><br>
+
+        <input type="submit" name="" value="submit">
+    </form>
+
+    <h1>Output</h1>
+    {{result}}
+</body>
+</html>
